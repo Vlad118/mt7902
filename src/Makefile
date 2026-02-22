@@ -1,4 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-only
+EXTRA_CFLAGS += -DCONFIG_MT76_LEDS
 KVER ?= $(if $(KERNELRELEASE),$(KERNELRELEASE),$(shell uname -r))
 KSRC ?= $(if $(KERNEL_SRC),$(KERNEL_SRC),/lib/modules/$(KVER)/build)
 FWDIR := /lib/firmware/mediatek
